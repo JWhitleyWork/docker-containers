@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -q -y --no-install-recommends \
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
 
 # setup sources.list
-RUN echo "deb http://packages.ros.org/ros-testing/ubuntu focal main" > /etc/apt/sources.list.d/ros1-latest.list
+RUN echo "deb http://repositories.ros.org/ubuntu/testing focal main" > /etc/apt/sources.list.d/ros1-latest.list
 
 # setup environment
 ENV LANG C.UTF-8
