@@ -15,7 +15,7 @@ RUN rosdep init && \
 # install ros packages
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ros-noetic-actionlib \
-		ros-noetic-bond-core \
-		ros-noetic-dynamic-reconfigure \
-		ros-noetic-nodelet-core \
+    ros-noetic-bond-core \
+    ros-noetic-dynamic-reconfigure \
+    ros-noetic-nodelet-core \
     && rm -rf /var/lib/apt/lists/*
